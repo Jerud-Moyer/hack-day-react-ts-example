@@ -24,7 +24,7 @@ const CharacterByName: React.FC = () => {
 
   }
 
-  const characterItems =  characters.map(
+  const characterItems = characters.map(
     character => (
       <li
         key={character.id}

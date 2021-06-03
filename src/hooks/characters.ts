@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { ListCharacter, Character} from '../types/types';
 import { useParams } from "react-router";
-import { getCharacterById, getCharacters, getCharactersByName } from "../services/trek-api";
+import { getCharacterById, getCharacters } from "../services/trek-api";
 
 
 export const useCharacters = () => {
@@ -38,22 +38,4 @@ export const useSingleCharacter = () => {
     loading,
     character
   };
-};
-
-export const useNamedCharacters = (name: string) => {
-  const [loading, setLoading] = useState<boolean>(false);
-  const [characters, setCharacters] = useState<ListCharacter[]>([])
-
-  useEffect(() => {
-    setLoading(true)
-    getCharactersByName(name)
-      .then(fetchedCharacters => setCharacters(fetchedCharacters))
-      .finally(() => setLoading(false));
-  }, [name]);
-
-  return {
-    loading,
-    characters
-  };
-
 };

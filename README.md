@@ -1,4 +1,5 @@
 ***introduction***
+  - first thing link demo repo for those that want to code along
   - my name
   - my Alchemy journey
   - a little pre-Alchemy context
@@ -7,7 +8,7 @@
       - https://trekdex.netlify.app/
 
 ***give command for starting a create-react-app ts project & links to repo and API***  
-- npx create-react-app my-app-name   --template typescript
+- npx create-react-app my-app-name --template typescript
 
 - git repo link for bootstrap
 
@@ -25,6 +26,7 @@
     - ts config/webpack setup already
     - dont have to worry about tsc:watch it just works
   - some unique react-specific things
+  - sometimes you might get errors like 'try npm i --save-dev @types/react-router'
 
 ***step by step***
 - full builds
@@ -34,3 +36,21 @@
 
 - prebuit
   - CharacterList
+
+- full
+  - getCharacterById
+  - useSingleCharacter
+
+- pre
+  - CharacterDetail
+    - type React.FC
+    - demo moving line 13 to before line 11
+
+- full
+  - getCharactersByName
+  
+- pre
+  - CharacterByName
+    - React.FC
+    - type useState hooks
+    - type e on handleChange and handleSubmit
