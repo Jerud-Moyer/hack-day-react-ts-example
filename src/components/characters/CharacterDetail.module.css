@@ -11,7 +11,7 @@
 
 .loadingBox {
   position: relative;
-  padding-top: 40vh;
+  padding-top: 10vh;
   height: 100vh;
   background: var(--blue);
 }
@@ -58,7 +58,7 @@ button {
 }
 
 .loadingMessage {
-  margin-top: 40vh;
+  margin-top: 20vh;
   background: var(--blue);
 }
 
