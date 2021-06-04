@@ -8,7 +8,13 @@ const CharacterDetail: React.FC = () => {
   const history = useHistory();
 
   
-  if(loading || !character) return <h1>Dammit Jim I'm Loading...</h1>
+  if(loading || !character) return (
+    <div className={styles.loadingBox}>
+      <h1 className= {styles.loadingMessage}>
+        Dammit Jim I'm Loading...
+      </h1>
+    </div>
+  )
   
   const { imageUrl, name, origin, race, affiliation } = character;
   

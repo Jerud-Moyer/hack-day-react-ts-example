@@ -9,6 +9,13 @@
   --dark-blue: #114463;
 }
 
+.loadingBox {
+  position: relative;
+  padding-top: 40vh;
+  height: 100vh;
+  background: var(--blue);
+}
+
 .detailBox {
   position: relative;
   background: var(--blue);
@@ -52,6 +59,7 @@ button {
 
 .loadingMessage {
   margin-top: 40vh;
+  background: var(--blue);
 }
 
 @keyframes grow {
